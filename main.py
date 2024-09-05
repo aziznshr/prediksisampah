@@ -10,7 +10,7 @@ try:
     df_ledakan = pd.read_csv('data_ledakan.csv')
     df_suhu_rata_rata = pd.read_csv('data_suhu.csv')
     df_timbulan = pd.read_csv('data_timbulankota.csv')
-    df_produksi_metana = pd.read_csv(data_sampah.csv')
+    df_produksi_metana = pd.read_csv ('data_sampah.csv')
     df_kelembaban = pd.read_csv('data_kelembabanudara.csv')
 except FileNotFoundError:
     st.error("File data tidak ditemukan. Pastikan file CSV berada di direktori yang benar.")
