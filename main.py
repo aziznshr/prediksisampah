@@ -266,14 +266,6 @@ def visualize_produksi_metana(df_ledakan):
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 
-# Menampilkan 5 baris pertama
-print(df_ledakan.head().to_markdown(index=False, numalign="left", stralign="left"))
-
-# Menampilkan informasi tentang kolom (nama dan tipe data)
-print(df_ledakan.info())
-
-import altair as alt
-
 # 1. Extract `Tahun` from the `Tanggal Kejadian` column
 df_ledakan['Tahun'] = pd.to_datetime(df_ledakan['Tanggal Kejadian'], format='%A,%B %d,%Y').dt.year
 
