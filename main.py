@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import altair as alt
 from datetime import datetime
-import matplotlib.pyplot as plt
+ import matplotlib.pyplot as plt
 
 # Membaca data dari file CSV (dengan penanganan kesalahan)
 try:
