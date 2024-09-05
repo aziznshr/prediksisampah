@@ -7,11 +7,11 @@ import matplotlib.pyplot as plt
 
 # Membaca data dari file CSV (dengan penanganan kesalahan)
 try:
-    df_ledakan = pd.read_csv('Data/data_ledakan.csv')
-    df_suhu_rata_rata = pd.read_csv('Data/data_suhu.csv')
-    df_timbulan = pd.read_csv('Data/data_timbulankota.csv')
-    df_produksi_metana = pd.read_csv('Data/data_sampah.csv')
-    df_kelembaban = pd.read_csv('Data/data_kelembabanudara.csv')
+    df_ledakan = pd.read_csv('data_ledakan.csv')
+    df_suhu_rata_rata = pd.read_csv('data_suhu.csv')
+    df_timbulan = pd.read_csv('data_timbulankota.csv')
+    df_produksi_metana = pd.read_csv(data_sampah.csv')
+    df_kelembaban = pd.read_csv('data_kelembabanudara.csv')
 except FileNotFoundError:
     st.error("File data tidak ditemukan. Pastikan file CSV berada di direktori yang benar.")
     st.stop()  # Hentikan eksekusi jika file tidak ditemukan
